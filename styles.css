@@ -148,3 +148,39 @@
         transform: scale(1.05);
         /* Scale up the card on hover */
     }
+    /* footer css
+    /* Footer Styles */
+    
+    .footer {
+        background-color: #000;
+        color: #ff9900;
+        padding-top: 40px;
+    }
+    
+    .footer h5 {
+        color: #ff9900;
+    }
+    
+    .footer ul {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .footer ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer ul li a {
+        color: #ff9900;
+        text-decoration: none;
+    }
+    
+    .footer-bottom {
+        background-color: #222;
+        padding: 10px 0;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+        color: #ff9900;
+    }
