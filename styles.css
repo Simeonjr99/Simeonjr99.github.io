@@ -1,0 +1,150 @@
+    /* Custom CSS */
+    
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #000;
+        /* Set background color of the entire page to black */
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: auto;
+    }
+    
+    .genre-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        background-color: #000;
+        /* Set background color to black */
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .genre-list li {
+        margin: 0 10px;
+    }
+    
+    .genre-list li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #ff9900;
+        transition: background-color 0.3s ease;
+        font-weight: bold;
+    }
+    
+    .genre-list li a:hover {
+        background-color: #e68a00;
+    }
+    
+    .carousel-item img {
+        height: 300px;
+        /* Set a fixed height for carousel images */
+        width: 100%;
+        /* Ensure images cover the entire carousel item */
+        object-fit: cover;
+    }
+    /* Add this CSS code in your existing styles.css or in a new CSS file */
+    /* Style for the search container */
+    
+    .search-container {
+        float: right;
+        margin-top: 10px;
+        /* Adjust the margin as needed */
+    }
+    /* Style for the search input */
+    
+    .search-container input[type=text] {
+        padding: 10px;
+        /* Increase padding for better appearance */
+        border: 1px solid #ccc;
+        /* Add a border for better visibility */
+        border-radius: 5px;
+        /* Add rounded corners */
+        font-size: 16px;
+        /* Adjust font size */
+    }
+    /* Style for the search button */
+    
+    .search-container button {
+        padding: 10px 20px;
+        /* Increase padding for better appearance */
+        background-color: #ff9900;
+        /* Change background color */
+        color: white;
+        /* Change text color */
+        border: none;
+        border-radius: 5px;
+        /* Add rounded corners */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        /* Add smooth transition effect */
+    }
+    /* Style for the search button on hover */
+    
+    .search-container button:hover {
+        background-color: #ff9900;
+        /* Darken the background color on hover */
+    }
+    
+    .card {
+        height: 200px;
+        /* Set a fixed height for the cards */
+        background-size: cover;
+        /* Make sure the image covers the entire card */
+        background-position: center;
+        /* Center the background image */
+        color: #ffffff;
+        /* White text */
+        margin-bottom: 20px;
+        border: none;
+        /* Remove card border */
+    }
+    
+    .card-title {
+        color: #ff9900;
+        /* White title text */
+    }
+    
+    .card-text {
+        color: #ff9900;
+        /* White body text */
+    }
+    
+    .card-body {
+        padding: 20px;
+    }
+    
+    .btn-primary {
+        background-color: #ff9900;
+        /* Orange button background color */
+        border-color: #ff9900;
+        /* Orange button border color */
+    }
+    
+    .btn-primary:hover {
+        background-color: #e68a00;
+        /* Darker orange on hover */
+        border-color: #e68a00;
+        /* Darker orange on hover */
+    }
+    
+    .btn-primary:hover {
+        background-color: #e68a00;
+        /* Darker orange on hover */
+        border-color: #e68a00;
+        /* Darker orange on hover */
+    }
+    /* Add hover effect */
+    
+    .card:hover {
+        transform: scale(1.05);
+        /* Scale up the card on hover */
+    }

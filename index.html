@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BantuBox</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Your header content -->
+        <h1>BantuBox</h1>
+        <!-- Add this code where you want the search bar to appear, such as in the header -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search movies...">
+            <button onclick="searchMovies()">Search</button>
+        </div>
+
+
+    </header>
+    <main>
+        <div class="container">
+            <h1></h1>
+            <!-- Removed "Welcome to" and "Your favorite streaming platform!" -->
+            <!-- Genre list -->
+            <ul class="genre-list">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Comedy</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Horror</a></li>
+                <li><a href="#">Science Fiction</a></li>
+                <li><a href="#">Thriller</a></li>
+                <li><a href="#">Romance</a></li>
+                <!-- Add more genres as needed -->
+            </ul>
+            <div class="container mt-5">
+                <h1>Trending movies</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators" style="font-family: Times New Roman, sans-serif; color: black;">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
+                                <li data-target="#myCarousel" data-slide-to="5"></li>
+                                <li data-target="#myCarousel" data-slide-to="6"></li>
+                            </ul>
+
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="action1.jpg" alt="Slide 1" width="50%" max-height="300px">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="action2.jpg" alt="Slide 2" width="50%" max-height="300px">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="action 3.jpg" alt="Slide 3" width="50%" max-height=" 300px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="action 4.jpg" alt="Slide 3" width="50%" max-height=" 300px">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="action 5.jpg" alt="Slide 3" width="50%" max-height=" 300px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="action 6.jpg" alt="Slide 3" width="50%" max-height=" 300px">
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <h1>Featured Movies & Shows</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#featuredCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#featuredCarousel" data-slide-to="1"></li>
+                                <li data-target="#featuredCarousel" data-slide-to="2"></li>
+                                <li data-target="#featuredCarousel" data-slide-to="3"></li>
+                                <li data-target="#featuredCarousel" data-slide-to="4"></li>
+                                <li data-target="#featuredCarousel" data-slide-to="5"></li>
+                                <li data-target="#featuredCarousel" data-slide-to="6"></li>
+                            </ul>
+
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="feature 1.jpg" alt="Featured Slide 1" width="100%">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="featured 5.jpg" alt="Featured Slide 2" width="100%">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="feature 2.jpg" alt="Featured Slide 3" width="100%">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="featured 7.jpg" alt="Featured Slide 3" width="100%">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="feature 3.jpg" alt="Featured Slide 3" width="100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="feature 4.jpg" alt="Featured Slide 3" width="100%">
+                                    <div class="carousel-caption">
+                                        <h3></h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#featuredCarousel" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#featuredCarousel" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- movie categories-->
+        <div class="container mt-5">
+            <h1>Movie Categories</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="background-image: url('featured 6.jpg');">
+                        <div class="card-body">
+                            <h5 class="card-title">Action</h5>
+                            <p class="card-text">Explore the latest adrenaline and action-packed movies.</p>
+                            <a href="#" class="btn btn-primary">View Action Movies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="background-image: url('feature 4.jpg');">
+                        <div class="card-body">
+                            <h5 class="card-title">Comedy</h5>
+                            <p class="card-text">Laugh out loud with our collection of comedy movies.</p>
+                            <a href="#" class="btn btn-primary">View Comedy Movies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="background-image: url('featured 8.jpg');">
+                        <div class="card-body">
+                            <h5 class="card-title">Drama</h5>
+                            <p class="card-text">Experience gripping drama with our selection of movies.</p>
+                            <a href="#" class="btn btn-primary">View Drama Movies</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more categories as needed -->
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+    <footer>
+        <!-- Your footer content -->
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
+
+    <!-- Carousel Script -->
+    <script>
+        $(document).ready(function() {
+            $('#myCarousel').carousel();
+        });
+    </script>
+    <!-- Add this script tag in your HTML, preferably just before the closing body tag -->
+    <script>
+        function searchMovies() {
+            var input, filter, carousel, item, i, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            carousel = document.getElementById("myCarousel");
+            item = carousel.getElementsByClassName('carousel-item');
+
+            for (i = 0; i < item.length; i++) {
+                txtValue = item[i].textContent || item[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    item[i].style.display = "";
+                } else {
+                    item[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
