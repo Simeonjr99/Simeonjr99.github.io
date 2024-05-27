@@ -181,46 +181,86 @@
                 <!-- Add more categories as needed -->
             </div>
         </div>
+        <script>
+            // Wait for the DOM content to be fully loaded
+            document.addEventListener("DOMContentLoaded", function() {
+                // Get all genre links
+                var genreLinks = document.querySelectorAll(".genre-list a");
+
+                // Add click event listener to each genre link
+                genreLinks.forEach(function(link) {
+                    link.addEventListener("click", function(event) {
+                        // Prevent default link behavior
+                        event.preventDefault();
+
+                        // Get the selected genre from the link's text content
+                        var selectedGenre = this.textContent.trim().toLowerCase();
+
+                        // Call a function to filter movies based on the selected genre
+                        filterMoviesByGenre(selectedGenre);
+                    });
+                });
+            });
+
+            // Function to filter movies based on genre
+            function filterMoviesByGenre(genre) {
+                // Get all carousel items
+                var carouselItems = document.querySelectorAll("#myCarousel .carousel-item");
+
+                // Loop through each carousel item
+                carouselItems.forEach(function(item) {
+                    // Check if the movie's genre matches the selected genre
+                    var movieGenre = item.getAttribute("data-genre").toLowerCase();
+                    if (movieGenre === genre || genre === "all") {
+                        // Show the movie if it matches the genre or if "All" genres are selected
+                        item.style.display = "";
+                    } else {
+                        // Hide the movie if it doesn't match the genre
+                        item.style.display = "none";
+                    }
+                });
+            }
+        </script>
 
 
 
 
 
     </main>
-  <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5>About BantuBox</h5>
-                <p>BantuBox is your go-to platform for streaming the latest movies and shows. Explore our diverse collection today!</p>
-            </div>
-            <div class="col-md-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Shows</a></li>
-                    <li><a href="#">Genres</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Connect with Us</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
+    <footer class="footer">
         <div class="container">
-            <p class="text-center">&copy; 2024 BantuBox. All rights reserved. | Created by Nelson Mukula</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About BantuBox</h5>
+                    <p>BantuBox is your go-to platform for streaming the latest movies and shows. Explore our diverse collection today!</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Shows</a></li>
+                        <li><a href="#">Genres</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect with Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="text-center">&copy; 2024 BantuBox. All rights reserved. | Created by Nelson Mukula</p>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Bootstrap JS -->
